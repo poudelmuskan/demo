@@ -3,7 +3,7 @@ package com.example.demo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-@Service
+//@Service	//use only if there is no configuration file
 public class CustomerFactoryImpl implements CustomerFactory{
 
 	@Autowired

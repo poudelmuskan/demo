@@ -19,7 +19,7 @@ public class CustomerController {
 	public void getAllSortsOfCustomers(@PathVariable String type){
 		Customer customer = new Customer();
 		customer.setName(type+" guy");
-		this.customerFactory.getCustomer(type).speak(customer);
+		this.customerFactory.getCustomer(type.toLowerCase()).speak(customer);
 	}
 	
 }
